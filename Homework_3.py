@@ -28,6 +28,23 @@ l_b = [el for el in range(b_1, b_2+1)]
 lst_intersection = [elements for elements in l_a if elements in l_b]
 print("the intersection gives ", lst_intersection)
 
+
+# Largest number
+number = int(input("Please input the number "))
+lst_number = list(map(int, str(number)))
+new_list = lst_number.copy()
+lst_number.sort(reverse=True)
+print(new_list)
+print(lst_number)
+test_list = list(map(int, lst_number))
+number_new = int(''.join(map(str, test_list)))
+if number_new > number:
+    print("Yes, it is possible")
+else:
+    print("No, it is not possible")
+print(number_new)
+
+
 # Number of divisors
 
 number = int(input(("Please input the number" )))
